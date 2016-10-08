@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "MyString.h"
+
 @interface ViewController ()
 
 @end
@@ -16,6 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    MyString*string=[[MyString alloc]init];
+    [string performSelector:@selector(countAll)];
+    [string performSelector:@selector(pushViewController)];
+    //<prename="code"class="objc">//---------------------------------------------------------------
+    NSLog(@"finishtest");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
